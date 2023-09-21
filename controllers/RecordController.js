@@ -1,4 +1,4 @@
-const DataRecordModel = require('../models/dataRecordModel')
+const Record = require('../models/Record')
 
 async function createDataRecord(req, res, next) {
   try {
@@ -20,10 +20,10 @@ async function createDataRecord(req, res, next) {
       Temp_White,
       received_at,
     }
+    await Record.createDataRecord(dataRecord)
 
-    const dataRecordId = await DataRecordModel.createDataRecord(dataRecord)
-    res.status(201).json({ dataRecordId })
   } catch (error) {
+    console.log(error)
     next(error)
   }
 }
