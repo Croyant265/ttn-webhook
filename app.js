@@ -13,8 +13,7 @@ app.use('/api', deviceRoutes)
 app.use('/webhook', recordRoutes)
 
 app.use((err, req, res, next) => {
-  console.error(err.stack)
-  res.status(500).send('Something went wrong!')
+  console.error(err)
 })
 
 const port = process.env.PORT || 3000
