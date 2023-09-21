@@ -1,3 +1,9 @@
+DROP DATABASE IF EXISTS webhook;
+
+CREATE DATABASE webhook;
+
+USE webhook;
+
 CREATE TABLE Device (
     device_id VARCHAR(255) PRIMARY KEY,
     application_id VARCHAR(255) NOT NULL,
