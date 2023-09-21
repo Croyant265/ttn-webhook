@@ -11,7 +11,7 @@ async function createDevice(req, res, next) {
 }
 
 module.exports = {
-  createDevice,
+  createDevice
 }
 
 //Add Get device code

@@ -1,6 +1,6 @@
 const express = require('express')
 const router = express.Router()
-const c = require('../controllers/recordController')
+const recordController = require('../controllers/recordController')
 
 router.post('/post-data', recordController.createDataRecord)
 

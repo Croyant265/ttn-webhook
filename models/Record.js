@@ -13,7 +13,7 @@ async function createDataRecord(dataRecord) {
         dataRecord.Temp_White,
         dataRecord.received_at
       ]
-    );
+    )
     return {success:"true"}
   } catch (error) {
     console.log(error)

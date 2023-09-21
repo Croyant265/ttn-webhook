@@ -1,4 +1,4 @@
-let { record } = require('../models/record')
+const record = require('../models/record')
 
 async function createDataRecord(req, res, next) {
   try {
@@ -20,9 +20,9 @@ async function createDataRecord(req, res, next) {
       Temp_White,
       received_at,
     }
-    result = await record.createDataRecord(dataRecord)
-    if(result.sucess === "true"){
-      console.log('Record inserted successfully')
+    const result = await record.createDataRecord(dataRecord)
+    if(result.success === "true"){
+      console.log('Record inserted successfully!')
     }
 
   } catch (error) {
