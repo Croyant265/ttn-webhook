@@ -1,4 +1,4 @@
-const db = require('../config/dbconfig');
+const db = require('../config/dbconfig')
 
 async function createDevice(device) {
   try {
