@@ -11,7 +11,6 @@ This webhook is designed to seamlessly collect data from The Things Network (TTN
 - **MySQL Storage**: Stores the extracted data securely in a MySQL database.
 - **Real-time Processing**: Enables real-time data ingestion from your IoT devices.
 - **Customizable**: Easily adaptable to your specific data schema and processing needs.
-- **Error Handling**: Robust error handling and logging to ensure data integrity.
 
 ## Use Cases
 
