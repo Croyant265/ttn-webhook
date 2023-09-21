@@ -1,4 +1,4 @@
-const Record = require('../models/Record')
+const Record = require('../models/record')
 
 async function createDataRecord(req, res, next) {
   try {

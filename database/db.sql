@@ -1,8 +1,3 @@
-DROP DATABASE IF EXISTS webhook;
-
-CREATE DATABASE webhook;
-
-USE webhook;
 
 CREATE TABLE Device (
     device_id VARCHAR(255) PRIMARY KEY,
@@ -16,7 +11,7 @@ CREATE TABLE Device (
 CREATE TABLE DataRecord (
     data_record_id INT AUTO_INCREMENT PRIMARY KEY,
     device_id VARCHAR(255) NOT NULL,
-    BatV DECIMAL(1, 3),
+    BatV DECIMAL(4, 3),
     Temp_Black DECIMAL(2, 1),
     Temp_Red DECIMAL(2, 1),
     Temp_White DECIMAL(2, 1),
