@@ -1,4 +1,4 @@
-const Record = require('../models/record')
+let { record } = require('../models/record.js')
 
 async function createDataRecord(req, res, next) {
   try {
@@ -20,7 +20,7 @@ async function createDataRecord(req, res, next) {
       Temp_White,
       received_at,
     }
-    await Record.createDataRecord(dataRecord)
+    await record.createDataRecord(dataRecord)
 
   } catch (error) {
     console.log(error)
