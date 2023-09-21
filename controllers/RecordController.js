@@ -20,7 +20,10 @@ async function createDataRecord(req, res, next) {
       Temp_White,
       received_at,
     }
-    await record.createDataRecord(dataRecord)
+    result = await record.createDataRecord(dataRecord)
+    if(result.sucess === "true"){
+      console.log('Record inserted successfully')
+    }
 
   } catch (error) {
     console.log(error)
