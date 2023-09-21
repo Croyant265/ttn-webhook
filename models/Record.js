@@ -16,6 +16,7 @@ async function createDataRecord(dataRecord) {
     );
     return {success:"true"}
   } catch (error) {
+    console.log(error)
     throw new Error('Failed to insert data record.')
   }
 }
