@@ -1,9 +1,19 @@
 {
+  "name": "ttn-webhook",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "Believer Umuragwa",
+  "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "mysql2": "^3.6.1",
     "nodemon": "^3.0.1"
-  }
+  },
+  "description": ""
 }
