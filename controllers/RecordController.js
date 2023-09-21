@@ -9,7 +9,7 @@ async function createDataRecord(req, res, next) {
         received_at,
       },
       end_device_ids: { device_id },
-    } = req.body;
+    } = req.body
 
     // Create a data record object with the extracted fields
     const dataRecord = {
