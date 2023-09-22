@@ -16,10 +16,10 @@ CREATE TABLE Device (
 CREATE TABLE DataRecord (
     data_record_id INT AUTO_INCREMENT PRIMARY KEY,
     device_id VARCHAR(255) NOT NULL,
-    BatV DECIMAL(4, 3),
-    Temp_Black DECIMAL(2, 1),
-    Temp_Red DECIMAL(2, 1),
-    Temp_White DECIMAL(2, 1),
+    BatV DOUBLE,
+    Temp_Black DOUBLE,
+    Temp_Red DOUBLE,
+    Temp_White DOUBLE,
     received_at DATETIME,
     FOREIGN KEY (device_id) REFERENCES Device(device_id)
 ) ENGINE=InnoDB;
