@@ -1,4 +1,4 @@
-const device = require('../models/device')
+const device = require('../models/device');
 
 async function createDevice(req, res, next) {
   try {
