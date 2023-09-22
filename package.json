@@ -15,5 +15,5 @@
     "express-basic-auth": "^1.2.1",
     "mysql2": "^3.6.1"
   },
-  "description": "A simple webhook to get from the things network to your application"
+  "description": "A simple webhook to get data from the things network to your application"
 }
