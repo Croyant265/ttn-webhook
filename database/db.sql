@@ -1,3 +1,8 @@
+DROP DATABASE IF EXISTS ttn_webhook;
+
+CREATE DATABASE ttn_webhook;
+
+USE ttn_webhook;
 
 CREATE TABLE Device (
     device_id VARCHAR(255) PRIMARY KEY,
