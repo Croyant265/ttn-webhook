@@ -2,7 +2,7 @@
 
 ## Description
 
-This webhook is designed to seamlessly collect data from The Things Network (TTN) and store it in a MySQL database. It serves as a bridge between your TTN-powered IoT devices and a MySQL database, allowing you to capture and manage valuable sensor data.
+This webhook is designed to seamlessly collect data from The Things Network (TTN) and store it in a MySQL database. It serves as a bridge between your TTN-powered IoT devices and your application, allowing you to capture and manage valuable sensor data.
 
 ## Features
 
